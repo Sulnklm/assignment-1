@@ -2,9 +2,9 @@ const express = require('express');
 const booksRouter = express.Router();
 
 const books = [
-    { id: 1, title: 'Spider-Man: No Way Home', author: 'Jon Watts', imageUrl: 'https://example.com/spiderman.jpg', year: 2021 },
-    { id: 2, title: 'Batman: The Killing Joke', author: 'Alan Moore', imageUrl: 'https://example.com/batman.jpg', year: 1988 },
-    { id: 3, title: 'Wonder Woman: Year One', author: 'Greg Rucka', imageUrl: 'https://example.com/wonderwoman.jpg', year: 2016 },
+    { id: 1, title: 'Spider-Man: No Way Home', author: 'Jon Watts', imageUrl: '/assets/Spider-Man.jpg', year: 2021 },
+    { id: 2, title: 'Batman: The Killing Joke', author: 'Alan Moore', imageUrl: '/assets/Batman.jpg', year: 1988 },
+    { id: 3, title: 'Wonder Woman: Year One', author: 'Greg Rucka', imageUrl: '/assets/Wonder-Woman.jpg', year: 2016 },
 ];
 
 function findBookById(req, res, next) {
